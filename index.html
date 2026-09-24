@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Резюме — Надежда Тиньгаева</title>
+  <script>
+  if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+</script>
+  <meta name="description" content="Резюме" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="page">
+
+  <!-- ШАПКА -->
+  <section class="grid">
+    <div class="resume-header">
+      <h1 class="section-tab section-tab--rt">РЕЗЮМЕ</h1>
+      <button id="theme-toggle" class="theme-btn" aria-label="Переключить тему">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ОБО МНЕ -->
+  <section class="grid grid-hero">
+    <div class="card hero-card">
+      <h2 class="section-tab section-tab--sm">ОБО МНЕ <br>ТИНЬГАЕВА НАДЕЖДА </h2>
+      <p class="hero-text">
+         Выпускница МГУ им. Н.П. Огарёва по специальности «Прикладная математика и информатика».
+         Владею Python, SQL, Excel, HTML, CSS, JavaScript; знакома с React, Spring, Git, Docker. 
+         Обладаю аналитическим мышлением, ответственностью и умею работать в команде. Интересуюсь фронтенд-разработкой,
+          мобильной разработкой и Data Science/ML. Готова к обучению.
+      <div class="contacts">
+        <div class="contact"><span class="ic">☎</span> 8 (987) 00-00-00</div>
+        <div class="contact"><span class="ic">🗪</span> nadusha.tingayeva@gmail.com</div>
+        <div class="contact"><span class="ic">𖡡</span> г. Саранск</div>
+      </div>
+    </div>
+
+    <div class="card about-card">
+      <img class="portrait" src="images/portrait.png" alt="Портрет" />
+    </div>
+  </section>
+
+  <!-- ОБРАЗОВАНИЕ -->
+  <section class="card knowledge-card">
+    <h2 class="knowledge-title">ОБРАЗОВАНИЕ<span class="dot">.</span></h2>
+    <div class="knowledge-sub">УНИВЕРСИТЕТ</div>
+
+    <div class="timeline">
+      <div class="tl-line" aria-hidden="true"></div>
+      <div class="tl-item">
+        <div class="tl-node"></div>
+        <div class="tl-name">ФГБОУ ВО «МГУ им. Н.П. Огарёва»</div>
+        <div class="tl-desc">Прикладная математика и информатика</div>
+        <div class="tl-term">Бакалавриат 2021–2025</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-node"></div>
+        <div class="tl-name">ФГБОУ ВО «МГУ им. Н.П. Огарёва»</div>
+        <div class="tl-desc">Прикладная математика и информатика</div>
+        <div class="tl-term">Магистратура 2025–2027</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОПЫТ + КУРСЫ (слева) и НАВЫКИ (справа) -->
+   <section class="grid grid-two">
+
+    <!-- ЛЕВО, ОПЫТ -->
+    <div class="col">
+      <h2 class="section-tab section-tab--block">ОПЫТ</h2>
+
+      <div class="card exp-card">
+        <div class="exp-item">
+          <div class="exp-org">▶ ФГБОУ ВО «МГУ им. Н.П. Огарёва»</div>
+          <p><b>Период работы:</b> март 2024 &mdash; декабрь 2024 </p>
+          <p><b>Должность:</b> Лаборант-исследователь</p>
+          <ul>
+            <li>Участие в гранте РНФ: алгоритм, расчёты, подготовка результатов.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-org">▶ ФГБОУ ВО «МГУ им. Н.П. Огарёва»</div>
+          <p><b>Период работы:</b> декабрь 2025 &mdash; н.в.</p>
+          <p><b>Должность:</b> Ассистент</p>
+          <ul>
+            <li>Проведение занятий.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- КУРСЫ -->
+      <div class="section-tab section-tab--block courses-tab">КУРСЫ, ПОВЫШЕНИЕ КВАЛИФИКАЦИИ И ДР</div>
+<div class="card">
+  <div class="courses-grid">
+
+    <div class="course">
+      <div class="course-title">▶ Современные методы робототехники и теории управления</div>
+      <p><b>Учебное заведение:</b> АНОО ВО «Университет «Сириус». Научный центр информационных технологий и искусственного интеллекта</p>
+      <p><b>Дата окончания:</b> 2024 год</p>
+      <p><b>Период обучения:</b> 44 часа</p>
+    </div>
+
+    <div class="course">
+      <div class="course-title">▶ Оператор электронно-вычислительных и вычислительных машин</div>
+      <p><b>Учебное заведение:</b> ФГБОУ ВО «МГУ им. Н.П. Огарёва»</p>
+      <p><b>Дата окончания:</b> 2024 год</p>
+      <p><b>Период обучения:</b> 108 часов</p>
+    </div>
+
+    <div class="course">
+      <div class="course-title">▶ Методические аспекты применения цифровых технологий в инженерном анализе и естественно-научных исследованиях</div>
+      <p><b>Учебное заведение:</b> ФГБОУ ВО «МГУ им. Н.П. Огарёва»</p>
+      <p><b>Дата окончания:</b> 2025 год</p>
+      <p><b>Период обучения:</b> 24 часа</p>
+    </div>
+
+    <div class="course">
+      <div class="course-title">▶ Методические аспекты применения цифровых технологий в инженерном анализе и естественно-научных исследованиях</div>
+      <p><b>Учебное заведение:</b> ФГБОУ ВО «МГУ им. Н.П. Огарёва»</p>
+      <p><b>Дата окончания:</b> 2026 год</p>
+      <p><b>Период обучения:</b> 24 часа</p>
+    </div>
+
+  </div>
+</div>
+    </div>
+
+    <!-- ПРАВО, НАВЫКИ -->
+    <div class="col">
+      <div class="section-tab section-tab--block">НАВЫКИ</div>
+      <div class="card skills-card">
+        <div class="search-wrap">
+          <input id="skill-search" class="search-input" type="text"
+                 placeholder="Найдите навык или категорию…" autocomplete="off" />
+          <button id="skill-clear" class="search-clear" type="button" hidden>×</button>
+        </div>
+        <div class="chips" id="skill-chips"></div>
+        <p class="skills-status" id="skills-status"></p>
+        <div class="skill-list" id="skill-list" role="list"></div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+  <script src="js/script.js"></script>
+</body>
+</html>
